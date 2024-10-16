@@ -1,5 +1,5 @@
 #include "option-models/AmericanOptionPricing.h"
-#include "monte-carlo/MonteCarloSimulation.h"
+#include "monte-carlo/monte-carlo.h"
 #include <numeric> 
 #include <iostream>
 
@@ -50,13 +50,14 @@ int main() {
 //   unsigned int steps = 1;                                         // Number of step the random path takes from start
 //   bool isCallOption = true;                                       // Call option
 
-    steps = 1;                                         // Number of step the random path takes from start
+    
 
 
     // Create an AmericanOption object
 //    AmericanOption option(strike, expiry, spotPrice, riskFreeRate, volatility, steps, isCallOption);
 
 
+steps = 1;                                         // Number of step the random path takes from start (DEL this if you uncomment the other vars)
 
 // Create a MonteCarloSimulation object
 MonteCarloSimulation mcSim(10000, steps);
@@ -93,8 +94,7 @@ MonteCarloSimulation mcSim(10000, steps);
     std::cout << "\nMean of the expected payoff: " << expectedPayoffMean << std::endl;
     std::cout << "Mean of the probability of ending ITM: " << inTheMoneyProbabilityMean * 100 << "%" << std::endl; // Convert to percentage
 
+    std::cout << "----------------------------------------------" << "\n" << std::endl;
+
     return 0;
-
-
-
 }

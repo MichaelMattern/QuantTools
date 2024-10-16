@@ -1,2 +1,5 @@
-﻿  main.cpp
+﻿  black-scholes.cpp
+  main.cpp
+  monte-carlo.cpp
+  Generating Code...
   OptionsPricing.vcxproj -> C:\Users\mikey\Desktop\Quant\OptionsPricing\x64\Debug\OptionsPricing.exe

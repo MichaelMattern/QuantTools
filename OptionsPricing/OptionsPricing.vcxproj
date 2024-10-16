@@ -127,14 +127,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="black-scholes\black-scholes.cpp" />
     <ClCompile Include="option-models\AmericanOptionPricing.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="monte-carlo\monteCarloSimulation.cpp" />
+    <ClCompile Include="monte-carlo\monte-carlo.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="black-scholes\black-scholes.h" />
     <ClInclude Include="monte-carlo\AmericanOptionPricing.h" />
     <ClInclude Include="option-models\AmericanOptionPricing.h" />
-    <ClInclude Include="monte-carlo\monteCarloSimulation.h" />
+    <ClInclude Include="monte-carlo\monte-carlo.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Screenshot 2024-10-15 205731.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

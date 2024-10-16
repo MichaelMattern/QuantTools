@@ -21,7 +21,10 @@
     <ClCompile Include="option-models\AmericanOptionPricing.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="monte-carlo\monteCarloSimulation.cpp">
+    <ClCompile Include="monte-carlo\monte-carlo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="black-scholes\black-scholes.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -29,11 +32,19 @@
     <ClInclude Include="option-models\AmericanOptionPricing.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="monte-carlo\monteCarloSimulation.h">
+    <ClInclude Include="monte-carlo\monte-carlo.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="monte-carlo\AmericanOptionPricing.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="black-scholes\black-scholes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Screenshot 2024-10-15 205731.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>
